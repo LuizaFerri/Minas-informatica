@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header {
+    max-width: 100%;
+}
+
+.logo {
+    border-bottom: 1px solid rgb(177, 170, 170);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+.logo input {
+    background-color: #EF7A4B;
+    color: white;
+    width: 115px;
+    height: 29px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo input:hover {
+    background-color: #e29c80;
+}
+
+.lista-itens li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.lista-itens li:hover {
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    padding: 2px;
+}
+
+.lista-itens li a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista-itens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #000000d0;
+    height: 76px;
+    margin-bottom: 20px;
+}
+
+/* header responsivo */
+
+@media screen and (max-width:600px) {
+    .lista-itens {
+        flex-wrap: wrap;
+    }
+    .lista-itens li {
+        padding: 10px
+    }
+}
+
+.nome {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.titulo {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.preco {
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.quantidade{
+    font-size: 20px;
+}
+
+hr {
+    border: 3px solid rgba(0, 0, 0, 0.144);
+    margin-top: 15px;
+}
+
+.produtos img{
+    width: 200px;
+}
+.produtos{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.descricao{
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.precoProduto{
+    font-size: 19px;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    
+}
+
+.bntfinalizar{
+ width: 300px;
+ height: 30px;
+ border-radius: 20px;
+ background-color: rgb(255, 223, 80);
+ border: none;
+ cursor: pointer;
+}
+
+.bntfinalizar:hover{
+    background-color:rgba(193, 202, 57, 0.61) ;
+}
+
+.bntcontinuar{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color:#EF7A4B;
+    border: none;
+    cursor: pointer;
+}
+.bntcontinuar:hover{
+    background-color:#ef794b9a
+}
+.botoes span{
+    padding: 20px;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.direitosAutorais {
+    padding-right: 10px;
+}
+
+.footer span {
+    padding-left: 20px;
+}
+
+
+/*responsividade carrinho*/
+
+@media screen and (max-width:700px) {
+    .teste img{
+        width:  180px;;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .quantidade{
+        font-size: 17px;
+        padding-right: 30px;
+    }
+    .preco{
+        font-size: 17px;
+    }
+    .subtotal{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width:490px) {
+    .nome{
+        margin-left: 14px;;
+    }
+    .teste img{
+        width: 100px;
+    }
+    .descricao{
+        font-size: 15px;
+    }
+    .subtotal{
+        font-size: 20px;
+    }
+    .precoProduto{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .titulo{
+        font-size: 17px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .teste img{
+        width: 80px;
+    }
+    .teste{
+        max-width: min-content;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+    .quantidade{
+        font-size: 13px;
+    }
+    .preco{
+        font-size: 13px;
+    }
+    .bntcontinuar{
+        width:200px;
+    }
+    .bntfinalizar{
+        width: 200px;
+    }
+    
+}
